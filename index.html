@@ -7,240 +7,261 @@
     <meta name="description"
         content="Клініка 'Вільне життя' – надійна підтримка на шляху до подолання залежностей. Допомагаємо повернути свободу від алкоголю, наркотиків та азартних ігор.">
     <title>Вільне життя - Клініка для лікування залежностей</title>
-    <!-- Підключення шрифтів та іконок -->
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-
-    <!-- Підключення стилів -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Головна секція -->
-    <section class="hero-section">
-        <div class="overlay"></div>
+<    <!-- Header Section with Bootstrap Navbar -->
+    <header class="header bg-success">
         <div class="container">
-            <h1 class="hero-title">Шлях до здорового та гармонійного життя. Професійна підтримка на кожному етапі.</h1>
-            <p class="hero-subtitle">Ми допомагаємо нашим клієнтам знайти внутрішню силу для змін, подолати складні ситуації та повернутися до здорового
-            способу життя. Персоналізований підхід та комплексна підтримка з дотриманням повної конфіденційності</p>
-            <div class="cta-buttons">
-                <a href="#contact" class="cta-button primary">Отримати безкоштовну консультацію</a>
-                <a href="#services" class="cta-button secondary">Записатися на прийом</a>
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <div class="text-white small"><i class="fas fa-map-marker-alt"></i> м. Вінниця, вул. Стрілецька, 1</div>
+                <div class="text-white small"><i class="fas fa-phone"></i> +38 (063) 600-600-8</div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="logo.png" alt="Logo" height="50">
+                    <h1 class="ms-2 mb-0 text-white">Вільне Життя</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">Про нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#advantages">Про Нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
+                    </ul>
+                    <a href="#contact" class="btn btn-warning text-uppercase ms-lg-3">Дізнатися Ціну</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Enhanced Hero Section with Image and Additional CSS Shapes -->
+    <section class="hero-section position-relative overflow-hidden d-flex align-items-center">
+        <!-- Green Gradient Background -->
+        <div class="hero-bg position-absolute w-100 h-100 top-0 start-0"></div>
+    
+        <!-- Shape Overlays -->
+        <div class="shape shape-left rounded-circle position-absolute"></div>
+        <div class="shape shape-right rounded-circle position-absolute"></div>
+        <div class="shape shape-top rounded-circle position-absolute"></div>
+        <div class="shape shape-bottom rounded-circle position-absolute"></div>
+    
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-white">
+                    <div class="hero-content py-5">
+                        <!-- Text Content with Specific Formatting -->
+                        <p class="text-uppercase letter-spacing small-text mb-0">приватна клініка</p>
+                        <h1 class="display-2 fw-bold text-uppercase">вільне життя</h1>
+                        <p class="hero-subtext my-4">Ми надаємо безкоштовні консультації для всіх, хто прагне повернути своє
+                            здоров'я та гармонію у житті.</p>
+    
+                        <!-- Hero Buttons -->
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#contact" class="btn btn-outline-light btn-lg shadow-lg">Записатись</a>
+                            <a href="#contact" class="btn btn-success btn-lg shadow-lg">Дізнатися Ціну</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Hero Image Section -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="image.jpg" alt="Clinic Image" class="img-fluid shadow-lg rounded animate-fade-in">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Секція "Наші Послуги" -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <h2 class="section-title">Комплексні послуги для відновлення здоров'я</h2>
-            <p class="section-description">Наші спеціалісти пропонують сучасні та перевірені методи, що враховують усі аспекти фізичного та психічного благополуччя
-            клієнтів.</p>
-            <div class="services-list">
-                <div class="service-card">
-                    <i class="fas fa-pills service-icon"></i>
-                    <h3 class="service-name">Медикаментозна підтримка</h3>
-                    <p class="service-description">Індивідуальний підбір схем для покращення стану здоров'я.</p>
+    <!-- "Про нас" Section -->
+    <section id="about" class="about-section py-5 position-relative">
+        <!-- Green Background Shape -->
+        <div class="about-bg position-absolute w-100 h-100 top-0 start-0"></div>
+    
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <!-- Left Column: Text Content -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title display-4 text-uppercase text-success mb-4">Про нас</h2>
+                    <p class="section-description lead text-dark mb-4">
+                        Вільне життя — це не просто клініка, це місце, де кожен може знайти підтримку та допомогу на своєму
+                        шляху до здорового життя.
+                        Ми прагнемо відновити вашу внутрішню гармонію, пропонуючи сучасні методи лікування, засновані на
+                        комплексному підході.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Ми забезпечуємо конфіденційність та індивідуальний підхід до кожного клієнта. Наша команда
+                        складається з кваліфікованих спеціалістів, які допоможуть вам зробити перший крок до змін.
+                    </p>
+                    <a href="#contact" class="btn btn-success text-uppercase px-4 py-2 shadow-lg">Дізнатися більше</a>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-flask service-icon"></i>
-                    <h3 class="service-name">Детоксикація організму</h3>
-                    <p class="service-description">Безпечне очищення організму та відновлення природної рівноваги.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-brain service-icon"></i>
-                    <h3 class="service-name">Психологічна підтримка</h3>
-                    <p class="service-description">Професійні консультації з кваліфікованими спеціалістами для зміцнення внутрішніх ресурсів та контролю над емоціями.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-users service-icon"></i>
-                    <h3 class="service-name">Сімейне консультування</h3>
-                    <p class="service-description">Підтримка родин у складних ситуаціях та відновлення гармонії у стосунках.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-hand-holding-heart service-icon"></i>
-                    <h3 class="service-name">Програми адаптації та ресоціалізації</h3>
-                    <p class="service-description">Індивідуальні програми для повного відновлення внутрішньої рівноваги та повернення до активного соціального життя.</p>
+    
+                <!-- Right Column: Image Content -->
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <img src="image.jpg" alt="Про нас Image" class="img-fluid shadow-lg rounded animate-fade-in">
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Секція "Історії Успіху" зі слайдером -->
-<section id="stories" class="success-stories-section">
+    <!-- "Наші Переваги" Section -->
+    <section id="advantages" class="advantages-section py-5 bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <h2 class="section-title text-center text-uppercase text-success mb-4">Наші Переваги</h2>
+            <p class="section-description text-center mb-5">
+                Вільне життя — це команда професіоналів, які завжди готові допомогти вам у будь-якій ситуації. Ми пропонуємо
+                індивідуальний підхід та сучасні методи лікування для кожного.
+            </p>
+    
+            <!-- Advantages Cards -->
+            <div class="row text-center">
+                <!-- Card 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="advantage-card shadow-lg rounded p-4 h-100">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-user-md fa-3x text-success"></i>
+                        </div>
+                        <h5 class="advantage-title text-uppercase mb-3">Професіоналізм</h5>
+                        <p class="text-muted">Наші спеціалісти мають багаторічний досвід у своїх галузях та використовують
+                            найсучасніші методи лікування.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="advantage-card shadow-lg rounded p-4 h-100">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-lock fa-3x text-success"></i>
+                        </div>
+                        <h5 class="advantage-title text-uppercase mb-3">Конфіденційність</h5>
+                        <p class="text-muted">Ми забезпечуємо повну конфіденційність та приватність для кожного нашого
+                            клієнта.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="advantage-card shadow-lg rounded p-4 h-100">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-hands-helping fa-3x text-success"></i>
+                        </div>
+                        <h5 class="advantage-title text-uppercase mb-3">Підтримка</h5>
+                        <p class="text-muted">Ми готові підтримати вас на кожному етапі лікування та реабілітації, надаючи
+                            комплексний підхід.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="advantage-card shadow-lg rounded p-4 h-100">
+                        <div class="icon-container mb-3">
+                            <i class="fas fa-heartbeat fa-3x text-success"></i>
+                        </div>
+                        <h5 class="advantage-title text-uppercase mb-3">Здоров'я</h5>
+                        <p class="text-muted">Ми дбаємо про ваше фізичне та психологічне здоров'я, пропонуючи комплексні
+                            методи для вашого одужання.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- "Зв'яжіться з нами" Section with Single Row Layout -->
+<section id="contact" class="contact-section py-5">
     <div class="container">
-        <h2 class="section-title">Історії змін наших клієнтів</h2>
-        <p class="section-description">Наші клієнти — найкращий приклад того, як професійна підтримка та сила духу можуть змінити життя на краще. Їхні історії
-        — це натхнення для кожного, хто знаходиться на шляху до позитивних змін.</p>
-        <!-- Слайдер з історіями успіху -->
-        <div class="stories-slider">
-            <!-- Історія #1 -->
-            <div class="story-slide">
-                <i class="fas fa-wine-bottle story-icon"></i>
-                <h3 class="story-title">Анонімна історія #1</h3>
-                <p class="story-description"><strong>Проблема:</strong> Тривалий період зловживання алкоголем.<br><strong>Рішення:</strong> Комплексна програма відновлення, підтримка родини.
-                    <br><strong>Результат:</strong>Повне відновлення фізичного та емоційного стану, повернення до професійної діяльності.
-                </p>
+        <!-- Section Title and Description -->
+        <h2 class="section-title text-center text-uppercase text-success mb-4">Зв'яжіться з нами</h2>
+        <p class="section-description text-center mb-5">
+            Ми завжди готові надати консультацію, відповісти на всі ваші питання та підтримати у складний час. Залиште
+            ваші контакти, і ми зв'яжемося з вами найближчим часом.
+        </p>
+
+        <!-- Contact Information Row -->
+        <div class="row justify-content-center text-center mb-5">
+            <!-- Contact Card 1: Address -->
+            <div class="col-md-3">
+                <div class="contact-info p-4 shadow-sm rounded bg-white mb-4">
+                    <div class="icon-container text-success mb-3">
+                        <i class="fas fa-map-marker-alt fa-3x"></i>
+                    </div>
+                    <h5 class="contact-label text-uppercase">Адреса</h5>
+                    <p class="contact-detail text-muted">м. Київ, вул. Незалежності, 12</p>
+                </div>
             </div>
-            <!-- Історія #2 -->
-            <div class="story-slide">
-                <i class="fas fa-syringe story-icon"></i>
-                <h3 class="story-title">Анонімна історія #2</h3>
-                <p class="story-description"><strong>Проблема:</strong> Проблеми зі здоров'ям через неправильні звички у підлітковому віці.<br><strong>Рішення:</strong> Комплексний підхід до оздоровлення, довгострокова адаптаційна програма.<br>
-                <strong>Результат:</strong> Успішне завершення реабілітації, активне громадське
-                    життя.</p>
+            <!-- Contact Card 2: Phone -->
+            <div class="col-md-3">
+                <div class="contact-info p-4 shadow-sm rounded bg-white mb-4">
+                    <div class="icon-container text-success mb-3">
+                        <i class="fas fa-phone fa-3x"></i>
+                    </div>
+                    <h5 class="contact-label text-uppercase">Телефон</h5>
+                    <p class="contact-detail text-muted">+38 (050) 123-45-67</p>
+                </div>
             </div>
-            <!-- Історія #3 -->
-            <div class="story-slide">
-                <i class="fas fa-dice story-icon"></i>
-                <h3 class="story-title">Анонімна історія #3</h3>
-                <p class="story-description"><strong>Проблема:</strong> Проблеми з азартними іграми, фінансові труднощі<br><strong>Рішення:</strong> Психологічне консультування та програма ресоціалізації.<br><strong>Результат:</strong> Відновлення фінансової стабільності, поліпшення стосунків з родиною</p>
+            <!-- Contact Card 3: Email -->
+            <div class="col-md-3">
+                <div class="contact-info p-4 shadow-sm rounded bg-white mb-4">
+                    <div class="icon-container text-success mb-3">
+                        <i class="fas fa-envelope fa-3x"></i>
+                    </div>
+                    <h5 class="contact-label text-uppercase">Email</h5>
+                    <p class="contact-detail text-muted">info@vilne-zhyttya.ua</p>
+                </div>
             </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form bg-white p-5 shadow-lg rounded mb-5 w-100">
+            <h5 class="form-title text-uppercase text-success mb-4 text-center">Залиште свій номер телефону</h5>
+            <form action="#" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Ваше ім'я</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Ваше ім'я" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Ваш номер телефону</label>
+                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="Ваш номер телефону"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Ваше повідомлення (необов'язково)</label>
+                    <textarea name="message" id="message" class="form-control" rows="4"
+                        placeholder="Ваше повідомлення"></textarea>
+                </div>
+                <button type="submit"
+                    class="btn btn-success text-uppercase px-4 py-2 shadow-lg d-block mx-auto">Залишити заявку</button>
+            </form>
+        </div>
+
+        <!-- Map Integration -->
+        <div class="map-container shadow-lg rounded overflow-hidden">
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.6761054874914!2d28.47789027648673!3d49.24462977138715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b5dcb49accb%3A0x70562c62ad712e8a!2z0LLRg9C70LjRhtGPINCh0YLRgNGW0LvQtdGG0YzQutCwLCAxLCDQktGW0L3QvdC40YbRjywg0JLRltC90L3QuNGG0YzQutCwINC-0LHQu9Cw0YHRgtGMLCAyMTAwMA!5e0!3m2!1suk!2sua!4v1728149478794!5m2!1suk!2sua"
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </section>
 
 
-    <!-- Секція "Команда Фахівців" -->
-    <section id="team" class="team-section">
-        <div class="container">
-            <!-- Заголовок та Опис -->
-            <h2 class="section-title">Знайомтеся з нашими фахівцями</h2>
-            <p class="section-description">Наша команда складається з кваліфікованих лікарів, психологів та реабілітологів,
-                які готові допомогти кожному пацієнту повернутися до здорового життя.</p>
-    
-            <!-- Список фахівців -->
-            <div class="team-list">
-                <!-- Карточка фахівця -->
-                <div class="team-card">
-                    <div class="team-photo-container">
-                        <img src="https://via.placeholder.com/300x300" alt="Головний лікар" class="team-photo">
-                    </div>
-                    <div class="team-content">
-                        <h3 class="team-name">Ім'я та Прізвище</h3>
-                        <p class="team-position">Головний лікар, спеціаліст із багаторічним досвідом у сфері охорони здоров'я.</p>
-                        <p class="team-description">Керує процесом підтримки здоров'я клієнтів, розробляє індивідуальні програми терапії, засновані на найсучасніших методах</p>
-                    </div>
-                </div>
-                <!-- Карточка фахівця -->
-                <div class="team-card">
-                    <div class="team-photo-container">
-                        <img src="https://via.placeholder.com/300x300" alt="Психолог" class="team-photo">
-                    </div>
-                    <div class="team-content">
-                        <h3 class="team-name">Ім'я та Прізвище</h3>
-                        <p class="team-position">робота з емоційними станами</p>
-                        <p class="team-description">Проводить індивідуальні та групові консультації, допомагаючи клієнтам знайти внутрішні ресурси для особистісного
-                        розвитку.</p>
-                    </div>
-                </div>
-                <!-- Карточка фахівця -->
-                <div class="team-card">
-                    <div class="team-photo-container">
-                        <img src="https://via.placeholder.com/300x300" alt="Реабілітолог" class="team-photo">
-                    </div>
-                    <div class="team-content">
-                        <h3 class="team-name">Ім'я та Прізвище</h3>
-                        <p class="team-position">Реабілітолог, розробник програми адаптації та ресоціалізації</p>
-                        <p class="team-description">Створює програми ресоціалізації та адаптації, які допомагають клієнтам успішно повернутися до активного життя.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-
-    <!-- Секція "Контактна Інформація" -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">Зв'яжіться з нами</h2>
-            <p class="section-description">Ми завжди готові надати консультацію, відповісти на всі ваші питання та
-                підтримати у складний час.</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt contact-icon"></i>
-                    <p class="contact-label">Адреса</p>
-                    <p class="contact-detail">м. Київ, вул. Незалежності, 12</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone contact-icon"></i>
-                    <p class="contact-label">Телефон</p>
-                    <p class="contact-detail">+38 (050) 123-45-67</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope contact-icon"></i>
-                    <p class="contact-label">Email</p>
-                    <p class="contact-detail">info@vilne-zhyttya.ua</p>
-                </div>
-            </div>
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9379808035364!2d2.2944813156733095!3d48.85884407928782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66faffb948f4f%3A0x509c5f4d0b5eb734!2sEiffel%20Tower!5e0!3m2!1sen!2sua!4v1633538069223!5m2!1sen!2sua"
-                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="contact-form">
-                <h3 class="form-title">Залиште свій номер телефону</h3>
-                <p class="form-description">І ми зв'яжемося з вами найближчим часом</p>
-                <form action="#" method="POST">
-                    <input type="text" name="name" placeholder="Ваше ім'я" class="form-input" required>
-                    <input type="tel" name="phone" placeholder="Ваш номер телефону" class="form-input" required>
-                    <textarea name="message" placeholder="Ваше повідомлення (необов'язково)"
-                        class="form-textarea"></textarea>
-                    <button type="submit" class="form-button">Залишити заявку</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Секція Footer -->
-    <footer class="footer-section">
-        <div class="container">
-            <div class="footer-about">
-                <h3>Вільне життя</h3>
-                <p>Допомагаємо повернути свободу від залежності. Індивідуальний підхід та комплексне лікування.</p>
-            </div>
-            <div class="footer-contacts">
-                <h4>Контакти</h4>
-                <p><i class="fas fa-map-marker-alt"></i> м. Київ, вул. Незалежності, 12</p>
-                <p><i class="fas fa-phone"></i> +38 (050) 123-45-67</p>
-                <p><i class="fas fa-envelope"></i> info@vilne-zhyttya.ua</p>
-            </div>
-            <div class="footer-social">
-                <h4>Ми в соціальних мережах</h4>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2024 Вільне життя. Усі права захищені.</p>
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2024 Вільне життя. Усі права захищені.</p>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.stories-slider').slick({
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                arrows: true,
-                autoplay: true,
-                autoplaySpeed: 5000,
-                adaptiveHeight: true,
-                prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-                nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
-            });
-        });
-    </script>
-
-
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
